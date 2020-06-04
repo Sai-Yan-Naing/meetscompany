@@ -34,7 +34,7 @@
       <ul class="dropdown navbar-nav ml-auto">
         <a href="" class="dropdown-toggle navbar-brand" data-toggle='dropdown'>マスター管理</a>
         <div class="dropdown-menu">
-          <%= link_to "学校一覧", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
+          <%= link_to "学校一覧", schools_index_path, method: :get, :class=>'dropdown-item' %>
           <%= link_to "業種編集", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
           <%= link_to "職種編集", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
         </div>

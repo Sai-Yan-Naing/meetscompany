@@ -1,19 +1,38 @@
-<%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-
-<br><br>
-
-<%= link_to "管理者" %> | <%= link_to "イベント" %> | <%= link_to "学生" %> | <%= link_to "企業" %> | <%= link_to "アドバイザー" %> | <%= link_to "マスター管理" %>
-
-<br><br>
-
-
-
 <div class="container">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<p>学校一覧</p>                                 <%= link_to "管理者", destroy_user_session_path, :class => "btn btn-info" %>
+	<div class="d-flex ml-auto">
+		
+	</div>
+	<div class="border border-primary">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<form action="/action_page.php">
+				    <div class="form-group">
+				      <label for="type">種別</label>
+				      <select name="type" id="type" class="form-control">
+						  <option value="volvo">Volvo</option>
+						  <option value="saab">Saab</option>
+						  <option value="mercedes">Mercedes</option>
+						  <option value="audi">Audi</option>
+						</select>
+				    </div>
+				    <div class="form-group">
+				      <label for="schoolname">学校名かしら文字</label>
+				      <input type="text" class="form-control" id="schoolname" name="schoolname">
+				    </div>
+				    <div class="form-group">
+				      <label for="sname">学校名</label>
+				      <input type="sname" class="form-control" id="sname" name="sname">
+				    </div>
+				    <div class="d-flex ml-auto">
+				    	<div class="p-2"><button type="submit" class="btn btn-primary">検索</button></div>
+	    				<div class="p-2 ml-auto"><button type="submit" class="btn btn-success">条件をクリア</button></div>
+				    	
+				    </div>
+				    
+				  </form>
+			</div>
+			<div class="col-md-2"></div>
 		</div>
-		<div class="col-md-1"></div>
 	</div>
 </div>
