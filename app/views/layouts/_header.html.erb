@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-sm mt-5">
+  <!-- Brand/logo -->
+  <!-- Links -->
+      <%= link_to "LOgo", destroy_user_session_path, method: :delete, :class=>'navbar-brand btn btn-info'%>
+    <ul class="dropdown navbar-nav ml-auto">
+        <button type="button" class="navbar-brand btn btn-success dropdown-toggle" data-toggle="dropdown">
+          UserName
+        </button>
+      <div class="dropdown-menu">
+        <%= link_to "パスワード変更", edit_user_password_path, method: :get, :class=>'dropdown-item' %>
+        <%= link_to "ログアウト", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
+      </div>
+    </ul>
+</nav>
+
+
+
+
+
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light mt-3">
+  <!-- Brand/logo -->
+  <!-- Links -->
+      <%= link_to "管理者", destroy_user_session_path, method: :delete, :class=>'navbar-brand' %>
+    
+      <%= link_to "イベント", destroy_user_session_path, method: :delete, :class=>'navbar-brand ml-auto' %>
+    
+      <%= link_to "学生", destroy_user_session_path, method: :delete, :class=>'navbar-brand ml-auto' %>
+    
+      <%= link_to "企業", destroy_user_session_path, method: :delete, :class=>'navbar-brand ml-auto' %>
+    
+      <%= link_to "アドバイザー", destroy_user_session_path, method: :delete, :class=>'navbar-brand ml-auto' %>
+
+      <ul class="dropdown navbar-nav ml-auto">
+        <a href="" class="dropdown-toggle navbar-brand" data-toggle='dropdown'>マスター管理</a>
+        <div class="dropdown-menu">
+          <%= link_to "学校一覧", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
+          <%= link_to "業種編集", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
+          <%= link_to "職種編集", destroy_user_session_path, method: :delete, :class=>'dropdown-item' %>
+        </div>
+      </ul>
+ 
+</nav>

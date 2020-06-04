@@ -53,3 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # devise installation
 
 gem 'devise'
+
+#add bootstrap
+gem 'bootstrap', '~>4.5.0'
